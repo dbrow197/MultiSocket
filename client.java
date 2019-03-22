@@ -141,9 +141,9 @@ public class client extends JFrame {
 
     private void sendMessage(String line){
         try{
-            out.writeObject("Client - " + line);
+            out.writeObject("\n Client - " + line);
             out.flush();
-            Message("Client - " + line);
+            Message("\n Client - " + line);
         }catch(IOException ioException){
             chatWindow.append("\n Cannot send Message");
         }

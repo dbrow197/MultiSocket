@@ -89,7 +89,7 @@ public class Server extends JFrame
         String line = "\n you are now ready to chat!";
         setUpType(true);
         sendMessage(line);
-        
+
 
         do{
             try{
