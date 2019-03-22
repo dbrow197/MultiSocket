@@ -109,7 +109,7 @@ public class Server extends JFrame
         try{
             out.writeObject("Server - " + line);
             out.flush();
-            Message("Server - " + line);
+            Message("\n Server - " + line);
 
         }catch(IOException ioException){
             chatWindow.append("\n Cannot send Message");
