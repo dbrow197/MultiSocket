@@ -14,8 +14,8 @@ public class Server extends JFrame
     private Socket		 socket = null;
     private ServerSocket server = null;
     private ObjectInputStream in	 = null;
-    private JTextField userText = null;
-    private JTextArea chatWindow = null;
+    private JTextField userText;
+    private JTextArea chatWindow;
     private ObjectOutputStream out = null;
 
     //Constructor and GUI
