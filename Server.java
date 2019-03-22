@@ -88,11 +88,12 @@ public class Server extends JFrame
     private void chat() throws IOException{
         String line = "\n you are now ready to chat!";
         setUpType(true);
-        sendMessage(line);
+
 
         do{
             try{
                 line = (String) in.readObject();
+                sendMessage(line);
                 Message("\n" + line);
             }catch(ClassNotFoundException classNotFoundException){
                 Message("\n" + "Cannot get retrieve message from user.");
