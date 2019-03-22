@@ -109,7 +109,7 @@ public class client extends JFrame {
                 Message("\n" + "Cannot get retrieve message from user.");
             }
 
-        } while (!line.equals("Over"));
+        } while (!line.equals("Server - Over"));
 
 
     }
