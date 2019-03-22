@@ -98,11 +98,12 @@ public class client extends JFrame {
     private void chat() throws IOException {
         System.out.println("you are now ready to chat!");
         setUpType(true);
-        sendMessage(line);
+
 
         do {
             try {
                 line = (String) in.readObject();
+                sendMessage(line);
                 Message("\n" + line);
             } catch (ClassNotFoundException classNotFoundException) {
                 Message("\n" + "Cannot get retrieve message from user.");
