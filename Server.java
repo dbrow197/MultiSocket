@@ -66,7 +66,9 @@ public class Server extends JFrame
     //pause for connection and print info to user to see who connects.
     private void standBy() throws IOException{
         Message("\n" + "Waiting for a client ...");
-        socket = server.accept();
+        synchronized (server) {
+            socket = server.accept();
+        }
         Message("\n" + "Client accepted.. Talking to: " +
                 socket.getInetAddress().getHostName());
     }
